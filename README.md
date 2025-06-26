@@ -12,7 +12,7 @@ https://build.fhir.org/ig/Interop-Sante/hl7.fhir.fr.medication/ConceptMap-PN13-F
 https://build.fhir.org/ig/Interop-Sante/hl7.fhir.fr.medication/ConceptMap-PN13-FHIR-prescmed-dosageinstruction-conceptmap.html
 
 
-## 🧩 Fonctionnalités
+## Fonctionnalités
 
 - Lecture d'un fichiers PN13 en entrée
 - Utilisation des mapping
@@ -22,19 +22,46 @@ https://build.fhir.org/ig/Interop-Sante/hl7.fhir.fr.medication/ConceptMap-PN13-F
 - Génération d'un fichier FHIR en sortie.
 
 
-
-## 📦 Installation
-
-### Cloner ce dépôt
-
-```bash
-git clone https://github.com/TDumetz/package_convert_pn13_to_fhir.git
-cd package_convert_pn13_to_fhir
-```
-
 ## Utilisation
 - La version de votre python doit être supérieur ou égale à la 3.11.13
-- L'environnement doit contenir le script, le fichier XML, le fichier Excel et le fichier CSV
+- Exécutez les commandes suivantes dans un terminal pour importer l'ensemble du contenu GitHub et exécuter le script
+
+### Installation de Git
+
+conda install git #sous conda
+
+winget install --id Git.Git -e --source winget #sous Windows
+
+brew install git #sous macOS (via Homebrew)
+
+sudo apt update
+sudo apt install git #sous Linux (Debian/Ubuntu)
+
+### Installation du package à partir de mon GitHub
+
+pip install git+https://github.com/TDumetz/PharmIAge_pn13_to_fhir.git
+
+### Se placer dans le bon répertoire
+
+cd PharmIAge_pn13_to_fhir
+
+### Ajout dynamique du dossier src au chemin de recherche des modules Python
+
+set PYTHONPATH=src #sous Windows
+
+export PYTHONPATH=src #sous Linux/macOS
+
+### Exécute le script avec le fichier XML contenu sur le GitHub
+
+python -m pn13_to_fhir.main input/2025051911285175_0000314_64166416_19924082.xml
+
+
+## Autres utilisations
+Pour convertir un autre fichier vous devez :
+- placer votre fichier XML dans le dossier input
+- adapter le script en remplaçant le nom du fichier XML par celui du nouveau (ligne 1365)
+- adapter la commande utilisée pour exécuter le script avec le nouveau nom du fichier
+
 
 ## Traitement concret de chaque champs
 Mapping réalisé :
