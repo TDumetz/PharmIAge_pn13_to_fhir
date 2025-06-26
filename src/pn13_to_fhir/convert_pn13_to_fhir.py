@@ -1362,7 +1362,7 @@ def convert_pn13_to_fhir_file(xml_input: str,
 
 #Exécution de la fonction de convertion au standard FHIR
 
-xml_in   = "2025051911285175_0000314_64166416_19924082.xml"#nom du fichier PN13 
+xml_in   = "./input/2025051911285175_0000314_64166416_19924082.xml"#nom du fichier PN13 
 json_out = "prescription_fhir.json"#nom que l'on souhaite donner au fichier FHIR
 
 #Appel de la fonction de convertion
