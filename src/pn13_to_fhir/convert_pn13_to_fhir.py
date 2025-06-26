@@ -602,7 +602,7 @@ def add_field_extension(fhir: dict,
 
 
 #Base Excel du médicament
-EXCEL_PATH = "../data/table_test_conversion_UI.xlsx"
+EXCEL_PATH = "./data/table_test_conversion_UI.xlsx"
 
 # ─── 3) Vérifie que le fichier existe ────────────────────────────────────
 if not os.path.isfile(EXCEL_PATH):
@@ -765,7 +765,7 @@ def map_repeated_practitioners(root: ET.Element,
 
 
 #Base CSV des voies d'administration
-CSV_PATH = "../data/table_test_voies_administration.csv"
+CSV_PATH = "./data/table_test_voies_administration.csv"
 
 # ─── 3) Vérifie que le fichier existe ────────────────────────────────────
 if not os.path.isfile(CSV_PATH):
