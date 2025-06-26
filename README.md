@@ -28,15 +28,18 @@ https://build.fhir.org/ig/Interop-Sante/hl7.fhir.fr.medication/ConceptMap-PN13-F
 - Exécutez les commandes suivantes dans un terminal pour importer l'ensemble du contenu GitHub et exécuter le script :
 
 ### Installation de Git
+#### sous conda
+conda install git
 
-conda install git #sous conda
+#### sous Windows
+winget install --id Git.Git -e --source winget
 
-winget install --id Git.Git -e --source winget #sous Windows
+#### sous macOS (via Homebrew)
+brew install git
 
-brew install git #sous macOS (via Homebrew)
-
+#### sous Linux (Debian/Ubuntu)
 sudo apt update
-sudo apt install git #sous Linux (Debian/Ubuntu)
+sudo apt install git
 
 ### Installation du package à partir de mon GitHub
 
@@ -48,9 +51,11 @@ cd PharmIAge_pn13_to_fhir
 
 ### Ajout dynamique du dossier src au chemin de recherche des modules Python
 
-set PYTHONPATH=src #sous Windows
+#### sous Windows
+set PYTHONPATH=src
 
-export PYTHONPATH=src #sous Linux/macOS
+#### sous Linux/macOS
+export PYTHONPATH=src
 
 ### Exécute le script avec le fichier XML contenu sur le GitHub
 
