@@ -8,7 +8,7 @@ def main():
 
     input_file = sys.argv[1]
     output_file = sys.argv[2]
-    convert_pn13_file(input_file, output_file)
+    convert_pn13_to_fhir_file(input_file, output_file)
 
 if __name__ == "__main__":
     main()
