@@ -17,14 +17,15 @@ https://build.fhir.org/ig/Interop-Sante/hl7.fhir.fr.medication/ConceptMap-PN13-F
 - Lecture d'un fichiers PN13 en entrée
 - Utilisation des mapping
 - Transformation de plusieurs champs pour leur intégration dans un fichier FHIR.
-- Pour être exécuté, l'environnement du script doit contenir le fichier Excel qui représente la table des médicaments déjà connus (équivalent simplifié des ressources Medication FHIR) et le fichiers CSV qui représente la table des voies d'administration. Ces derniers sont mis à jour si le code de la prescription n'est pas présent dans la table.
-- Fait apparaitre un extrait des ressources Medication et Practitioner.
+- Pour être exécuté, l'environnement doit respecter celui du GitHub
+- Le package contient un fichier Excel qui représente la table des médicaments déjà connus (équivalent simplifié des ressources Medication FHIR) et un fichiers CSV qui représente la table des voies d'administration. Ces derniers sont mis à jour si le code de la prescription n'est pas présent dans la table.
+- La prescription créée contient un extrait des ressources Medication et Practitioner.
 - Génération d'un fichier FHIR en sortie.
 
 
 ## Utilisation
 - La version de votre python doit être supérieur ou égale à la 3.11.13
-- Exécutez les commandes suivantes dans un terminal pour importer l'ensemble du contenu GitHub et exécuter le script
+- Exécutez les commandes suivantes dans un terminal pour importer l'ensemble du contenu GitHub et exécuter le script :
 
 ### Installation de Git
 
