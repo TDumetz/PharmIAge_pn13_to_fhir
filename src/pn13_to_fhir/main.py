@@ -1,5 +1,5 @@
 import sys
-from pn13_to_fhir.convert_pn13_to_fhir import convert_pn13_to_fhir_file
+from convert_pn13_to_fhir import convert_pn13_to_fhir_file
 
 def main():
     if len(sys.argv) != 3:
